@@ -1,0 +1,28 @@
+body{
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 20px;}
+
+#info{
+  font-size: 10px;
+}
+
+table{
+  margin: auto;
+  align-items: center;
+  width: 600px;
+}
+
+th, td {
+  border-style: groove;
+  border-collapse: collapse;
+}
+
+/*.line{*/
+/*  display: inline-block;*/
+/*}*/
+
+/*pre{*/
+/*  font-weight: bold;*/
+/*  font-size: 20px;*/
+/*}*/

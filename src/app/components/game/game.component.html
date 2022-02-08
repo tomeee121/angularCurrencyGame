@@ -1,0 +1,21 @@
+<body>
+<p>Podaj imię: </p>
+<input type="text" #name><br>
+<button (click)="sayHello(name.value)">Przywitaj się</button> {{messageForUser}}
+<br><br><br>
+<p id="info">Aktualna wartość USD w PLN:
+  <i>{{rootObject.conversion_rates.PLN}}</i></p>
+
+<table>
+  <tr><td>
+    <p>Podaj wartość USD w PLN: </p></td></tr>
+  <tr><td><input type="number" #value></td><br></tr>
+  <tr><td><label for="howMuchNumbers">Podaj ile liczb po przecinku chcesz podać:</label></td></tr>
+  <tr><td><input [(ngModel)]="precision" id="howMuchNumbers" name="precision" type="number"></td></tr>
+<!--  <tr><td><pre (click)="changeAccuracy(1)" class="line">+  </pre> <p class="line">Zwiększ lub zmniejsz liczbę sprawdzanych miejsc po przecinku </p><pre (click)="changeAccuracy(-1)" class="line">  -</pre></td><br></tr>-->
+  <tr><td><button (click)="check(value.value)">Sprawdź</button></td></tr>
+  <tr><td>{{checkingResult}}</td></tr>
+</table>
+<p>Wartość prawidłowa:</p>
+{{PLN}}
+</body>
